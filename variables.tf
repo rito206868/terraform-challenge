@@ -5,3 +5,19 @@ variable "gittoken" {
     type = string
     sensitive = true
 }
+
+variable "gituser" {
+  description = "gituser."
+}
+
+variable "repository" {
+  description = "repository."
+}
+
+variable "branch" {
+  description = "branch."
+}
+
+variable "source_branch" {
+  description = "source_branch."
+}

@@ -23,15 +23,15 @@ terraform {
 provider "github" {
 # GitHub Detail
   token = var.gittoken
-  owner = "rito206868"
+  owner = var.gituser
 }
 
 # Add a user to the organization
 resource "github_branch" "development" {
   # Repository name
-  repository    = "terraform-challenge"
+  repository    = var.repository
   # New Branch name
-  branch        = "development"
+  branch        = var.branch
   # Source Branch name
-  source_branch = "main"
+  source_branch = var.source_branch
 }
