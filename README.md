@@ -1,6 +1,6 @@
 # terraform-challenge
 
-=============>Setting github token like this:
+=============> Setting github token like this:
 Add following line in /home/{INSTANCE_USER}/.bash_profile
 export TF_VAR_gittoken={Paste the copied Personal_Token copied from Git Repo}
 
@@ -19,3 +19,5 @@ Store the token and initialize with following CLI commands,
 Terraform will store the token in plain text in the following file
 for use by subsequent commands:
     /home/ec2-user/.terraform.d/credentials.tfrc.json
+
+Verify: cat /home/ec2-user/.terraform.d/credentials.tfrc.json
