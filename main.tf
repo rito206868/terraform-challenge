@@ -1,3 +1,14 @@
+# Terraform Cloud detail
+terraform {
+  cloud {
+    organization = "rito-training"
+
+    workspaces {
+      name = "terraform-challenge"
+    }
+  }
+}
+
 # Terraform providers detail
 terraform {
   required_providers {
