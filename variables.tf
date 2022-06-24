@@ -6,6 +6,7 @@ variable "gittoken" {
     sensitive = true
 }
 
+# Other variables for GIT
 variable "gituser" {
   description = "gituser."
 }
